@@ -1,26 +1,123 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ugP-Gu-gtH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Find Show Tonight Table View Controller-->
+        <scene sceneID="EE4-VM-lNf">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="2eg-e5-8Z6" customClass="FindShowTonightTableViewController" customModule="FindShowTonight" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="1S8-Ez-m3J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="150" id="W5b-Em-10D" customClass="FindShowTonightTableViewCell" customModule="FindShowTonight" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W5b-Em-10D" id="i0T-Qm-qaS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lvX-kD-TDz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Site" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rb-ED-4vD">
+                                            <rect key="frame" x="8" y="0.0" width="359" height="141"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="35"/>
+                                            <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="演出名稱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7s9-eo-6p3">
+                                            <rect key="frame" x="8" y="8" width="359" height="36"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="演出名單" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDS-2X-ppg">
+                                            <rect key="frame" x="8" y="69" width="359" height="24"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="票價" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GL-ry-wBN">
+                                            <rect key="frame" x="8" y="113" width="359" height="28"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="hYw-bP-EJH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WDS-2X-ppg" firstAttribute="leading" secondItem="i0T-Qm-qaS" secondAttribute="leading" constant="8" id="5Eh-nl-Dfj"/>
+                                        <constraint firstAttribute="trailing" secondItem="1Rb-ED-4vD" secondAttribute="trailing" constant="8" id="8YP-qL-Ope"/>
+                                        <constraint firstItem="1GL-ry-wBN" firstAttribute="leading" secondItem="i0T-Qm-qaS" secondAttribute="leadingMargin" id="9w1-Si-SFi"/>
+                                        <constraint firstAttribute="trailing" secondItem="lvX-kD-TDz" secondAttribute="trailing" id="ACP-jm-7kc"/>
+                                        <constraint firstItem="1GL-ry-wBN" firstAttribute="bottom" secondItem="i0T-Qm-qaS" secondAttribute="bottomMargin" id="IaX-Ee-I9Y"/>
+                                        <constraint firstItem="1Rb-ED-4vD" firstAttribute="top" secondItem="i0T-Qm-qaS" secondAttribute="top" id="Kfw-ZW-mP9"/>
+                                        <constraint firstAttribute="bottom" secondItem="lvX-kD-TDz" secondAttribute="bottom" id="LC3-ru-nGS"/>
+                                        <constraint firstItem="lvX-kD-TDz" firstAttribute="leading" secondItem="i0T-Qm-qaS" secondAttribute="leading" id="Oae-XM-KJi"/>
+                                        <constraint firstItem="WDS-2X-ppg" firstAttribute="trailing" secondItem="i0T-Qm-qaS" secondAttribute="trailingMargin" id="Rdb-Uk-sdL"/>
+                                        <constraint firstItem="1GL-ry-wBN" firstAttribute="trailing" secondItem="i0T-Qm-qaS" secondAttribute="trailingMargin" id="XWs-sS-n1Q"/>
+                                        <constraint firstItem="1Rb-ED-4vD" firstAttribute="leading" secondItem="i0T-Qm-qaS" secondAttribute="leading" constant="8" id="b7u-Xf-eBf"/>
+                                        <constraint firstAttribute="bottom" secondItem="1Rb-ED-4vD" secondAttribute="bottom" constant="8" id="dBf-l9-lF8"/>
+                                        <constraint firstAttribute="trailing" secondItem="7s9-eo-6p3" secondAttribute="trailing" constant="8" id="kSY-eb-BuA"/>
+                                        <constraint firstItem="7s9-eo-6p3" firstAttribute="top" secondItem="i0T-Qm-qaS" secondAttribute="top" constant="8" id="nPP-mm-a2Q"/>
+                                        <constraint firstItem="WDS-2X-ppg" firstAttribute="top" secondItem="7s9-eo-6p3" secondAttribute="bottom" constant="25" id="tb3-t2-4n8"/>
+                                        <constraint firstItem="lvX-kD-TDz" firstAttribute="top" secondItem="i0T-Qm-qaS" secondAttribute="top" id="uX5-vW-kTV"/>
+                                        <constraint firstItem="7s9-eo-6p3" firstAttribute="leading" secondItem="i0T-Qm-qaS" secondAttribute="leading" constant="8" id="wxy-FO-fxb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="performerLabel" destination="WDS-2X-ppg" id="Rje-Lq-Frk"/>
+                                    <outlet property="priceLabel" destination="1GL-ry-wBN" id="g4y-ih-xJE"/>
+                                    <outlet property="showImageView" destination="lvX-kD-TDz" id="Xwu-Tn-s41"/>
+                                    <outlet property="showNameLabel" destination="7s9-eo-6p3" id="z3d-dZ-U6Z"/>
+                                    <outlet property="siteLabel" destination="1Rb-ED-4vD" id="zBp-87-0hj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2eg-e5-8Z6" id="5be-Zd-HhN"/>
+                            <outlet property="delegate" destination="2eg-e5-8Z6" id="PVO-vY-Bfr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="viB-Xu-r7Y"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcM-Ce-esZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2092" y="126.38680659670166"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iit-q9-Yy7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ugP-Gu-gtH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xDM-xG-512">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2eg-e5-8Z6" kind="relationship" relationship="rootViewController" id="mT2-gX-tDW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mln-6P-mv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152.8" y="126.38680659670166"/>
         </scene>
     </scenes>
 </document>
