@@ -1,0 +1,28 @@
+{
+  "commitish" : "2.2.1",
+  "iOS" : [
+    {
+      "hash" : "28e88af1d38b56813af870eda27f7fe62fd04e033a78077bfac0962f54cc1970",
+      "name" : "Kanna"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "watchOS" : [
+    {
+      "hash" : "05c4ce9e56c16564c66dba245af8eb8a1058de3cd1b787362ff414e07242fc7b",
+      "name" : "Kanna"
+    }
+  ],
+  "tvOS" : [
+    {
+      "hash" : "df09bd418e3a008f917810bf7b6b4cb92eb2873f12d77ad1ca4ddd29bd66c49e",
+      "name" : "Kanna"
+    }
+  ],
+  "Mac" : [
+    {
+      "hash" : "f3e98e95e1499f0bd9714e557aae5ddd482914282d6ed1074ed4f1e426372271",
+      "name" : "Kanna"
+    }
+  ]
+}
