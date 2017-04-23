@@ -29,32 +29,45 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lvX-kD-TDz">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Site" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rb-ED-4vD">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Site" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rb-ED-4vD">
                                             <rect key="frame" x="8" y="0.0" width="359" height="141"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="35"/>
-                                            <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="演出名稱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7s9-eo-6p3">
-                                            <rect key="frame" x="8" y="8" width="359" height="36"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Performer" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7s9-eo-6p3">
+                                            <rect key="frame" x="8" y="8" width="359" height="23"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDS-2X-ppg">
+                                            <rect key="frame" x="8" y="33" width="359" height="108"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="108" id="PSJ-yE-NDz"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="演出名單" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDS-2X-ppg">
-                                            <rect key="frame" x="8" y="69" width="359" height="24"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="票價" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GL-ry-wBN">
-                                            <rect key="frame" x="8" y="113" width="359" height="28"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1GL-ry-wBN">
+                                            <rect key="frame" x="8" y="113" width="175" height="28"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="hYw-bP-EJH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShowTime" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-Sc-lxq">
+                                            <rect key="frame" x="188" y="114" width="179" height="28"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="179" id="2R2-WH-yjA"/>
+                                                <constraint firstAttribute="height" constant="28" id="Vnv-78-tcG"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -66,27 +79,32 @@
                                         <constraint firstAttribute="trailing" secondItem="1Rb-ED-4vD" secondAttribute="trailing" constant="8" id="8YP-qL-Ope"/>
                                         <constraint firstItem="1GL-ry-wBN" firstAttribute="leading" secondItem="i0T-Qm-qaS" secondAttribute="leadingMargin" id="9w1-Si-SFi"/>
                                         <constraint firstAttribute="trailing" secondItem="lvX-kD-TDz" secondAttribute="trailing" id="ACP-jm-7kc"/>
+                                        <constraint firstItem="t0u-Sc-lxq" firstAttribute="leading" secondItem="1GL-ry-wBN" secondAttribute="trailing" constant="5" id="Hp5-ho-auy"/>
                                         <constraint firstItem="1GL-ry-wBN" firstAttribute="bottom" secondItem="i0T-Qm-qaS" secondAttribute="bottomMargin" id="IaX-Ee-I9Y"/>
                                         <constraint firstItem="1Rb-ED-4vD" firstAttribute="top" secondItem="i0T-Qm-qaS" secondAttribute="top" id="Kfw-ZW-mP9"/>
                                         <constraint firstAttribute="bottom" secondItem="lvX-kD-TDz" secondAttribute="bottom" id="LC3-ru-nGS"/>
                                         <constraint firstItem="lvX-kD-TDz" firstAttribute="leading" secondItem="i0T-Qm-qaS" secondAttribute="leading" id="Oae-XM-KJi"/>
                                         <constraint firstItem="WDS-2X-ppg" firstAttribute="trailing" secondItem="i0T-Qm-qaS" secondAttribute="trailingMargin" id="Rdb-Uk-sdL"/>
-                                        <constraint firstItem="1GL-ry-wBN" firstAttribute="trailing" secondItem="i0T-Qm-qaS" secondAttribute="trailingMargin" id="XWs-sS-n1Q"/>
                                         <constraint firstItem="1Rb-ED-4vD" firstAttribute="leading" secondItem="i0T-Qm-qaS" secondAttribute="leading" constant="8" id="b7u-Xf-eBf"/>
                                         <constraint firstAttribute="bottom" secondItem="1Rb-ED-4vD" secondAttribute="bottom" constant="8" id="dBf-l9-lF8"/>
+                                        <constraint firstItem="t0u-Sc-lxq" firstAttribute="leading" secondItem="1GL-ry-wBN" secondAttribute="trailing" constant="5" id="f7a-1q-X63"/>
                                         <constraint firstAttribute="trailing" secondItem="7s9-eo-6p3" secondAttribute="trailing" constant="8" id="kSY-eb-BuA"/>
                                         <constraint firstItem="7s9-eo-6p3" firstAttribute="top" secondItem="i0T-Qm-qaS" secondAttribute="top" constant="8" id="nPP-mm-a2Q"/>
-                                        <constraint firstItem="WDS-2X-ppg" firstAttribute="top" secondItem="7s9-eo-6p3" secondAttribute="bottom" constant="25" id="tb3-t2-4n8"/>
+                                        <constraint firstItem="WDS-2X-ppg" firstAttribute="top" secondItem="7s9-eo-6p3" secondAttribute="bottom" constant="2" id="tb3-t2-4n8"/>
                                         <constraint firstItem="lvX-kD-TDz" firstAttribute="top" secondItem="i0T-Qm-qaS" secondAttribute="top" id="uX5-vW-kTV"/>
+                                        <constraint firstAttribute="bottom" secondItem="t0u-Sc-lxq" secondAttribute="bottom" constant="8" id="vDq-De-uy5"/>
                                         <constraint firstItem="7s9-eo-6p3" firstAttribute="leading" secondItem="i0T-Qm-qaS" secondAttribute="leading" constant="8" id="wxy-FO-fxb"/>
+                                        <constraint firstAttribute="trailing" secondItem="t0u-Sc-lxq" secondAttribute="trailing" constant="8" id="zQv-Jq-JUG"/>
+                                        <constraint firstItem="WDS-2X-ppg" firstAttribute="bottom" secondItem="lvX-kD-TDz" secondAttribute="bottom" constant="-8" id="zSl-aY-DgV"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="performerLabel" destination="WDS-2X-ppg" id="Rje-Lq-Frk"/>
+                                    <outlet property="performerLabel" destination="7s9-eo-6p3" id="iR0-RA-t4J"/>
                                     <outlet property="priceLabel" destination="1GL-ry-wBN" id="g4y-ih-xJE"/>
                                     <outlet property="showImageView" destination="lvX-kD-TDz" id="Xwu-Tn-s41"/>
-                                    <outlet property="showNameLabel" destination="7s9-eo-6p3" id="z3d-dZ-U6Z"/>
+                                    <outlet property="showTimeLabel" destination="t0u-Sc-lxq" id="dOK-Zk-VqJ"/>
                                     <outlet property="siteLabel" destination="1Rb-ED-4vD" id="zBp-87-0hj"/>
+                                    <outlet property="titleLabel" destination="WDS-2X-ppg" id="s7t-XR-DMc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

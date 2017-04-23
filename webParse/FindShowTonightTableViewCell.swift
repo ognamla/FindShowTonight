@@ -11,10 +11,12 @@ import UIKit
 class FindShowTonightTableViewCell: UITableViewCell {
     
     @IBOutlet weak var siteLabel: UILabel!
-    @IBOutlet weak var showNameLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var performerLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var showTimeLabel: UILabel!
     @IBOutlet weak var showImageView: UIImageView!
+    @IBOutlet weak var titleTextView: UITextView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
